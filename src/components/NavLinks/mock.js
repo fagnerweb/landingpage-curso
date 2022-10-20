@@ -20,8 +20,8 @@ export default [
     newTab: false,
   },
   {
-    children: 'Link 4',
-    link: '#target4',
+    children: 'Link 5',
+    link: '#target5',
     newTab: false,
   },
   {

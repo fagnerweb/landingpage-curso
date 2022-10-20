@@ -84,10 +84,10 @@ exports[`<NavLinks /> should match snapshot 1`] = `
     </a>
     <a
       class="c1"
-      href="#target4"
+      href="#target5"
       target="_self"
     >
-      Link 4
+      Link 5
     </a>
     <a
       class="c1"
