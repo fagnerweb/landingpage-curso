@@ -15,11 +15,11 @@ describe('<TextComponent />', () => {
         font-size: 2.4rem;
       }
 
-      <div
+      <p
         class="c0"
       >
         Children
-      </div>
+      </p>
     `);
   });
 });

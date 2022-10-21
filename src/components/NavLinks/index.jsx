@@ -2,7 +2,7 @@ import P from 'prop-types';
 import * as Styled from './style';
 import { MenuLink } from '../MenuLink';
 
-export const NavLinks = ({ links = [] }) => {
+export const NavLinks = ({ links }) => {
   return (
     <Styled.Container aria-label="Main menu">
       {links.map((link) => (
