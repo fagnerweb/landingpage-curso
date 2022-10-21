@@ -74,11 +74,11 @@ exports[`<GridImage /> should render with background 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c3"
         >
           Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-        </p>
+        </div>
         <div
           class="c4"
         >
@@ -217,11 +217,11 @@ exports[`<GridImage /> should render without background 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c3"
         >
           Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-        </p>
+        </div>
         <div
           class="c4"
         >
