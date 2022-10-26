@@ -6,7 +6,9 @@ export const mapMenu = (menu = {}) => {
   } = menu;
 
   const links = menu.links || menu.menu_links || menu.menu || [];
-  const srcImg = menu?.logo?.data?.attributes?.url || '';
+  // const srcImg = menu?.logo?.data?.attributes?.url || '';
+
+  const srcImg = menu.logo && menu.logo.url ? menu.logo.url : '';
 
   return {
     newTab,

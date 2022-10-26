@@ -16,7 +16,7 @@ export const mapData = (pagesData = [{}]) => {
       slug,
       title,
       sections: mapSections(sections),
-      menu: mapMenu(menu),
+      menu: mapMenu(menu[0]),
     };
   });
 };
