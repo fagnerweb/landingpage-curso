@@ -1,4 +1,3 @@
-// import { mockBase } from '../Base/mock';
 import { Base } from '../Base';
 import { useEffect, useState } from 'react';
 import { mapData } from '../../api/map-data';
