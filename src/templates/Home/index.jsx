@@ -9,15 +9,21 @@ import { GridTwoColumn } from '../../components/GridTwoColumn';
 import { GridContent } from '../../components/GridContent';
 import { GridImage } from '../../components/GridImage';
 import { GridText } from '../../components/GridText';
+import { useLocation } from 'react-router-dom';
 
 export const Home = () => {
   const [data, setData] = useState([]);
+  const location = useLocation();
 
   useEffect(() => {
+    const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
+    const slug = pathname ? pathname : 'landing-page';
+    console.log(slug);
+
     const load = async () => {
       try {
         const data = await fetch(
-          'http://localhost:1337/api/pages/?filters=[slug]=landing-page&populate=deep',
+          `http://localhost:1337/api/pages/?filters=[slug]=${slug}&populate=deep`,
         );
         const json = await data.json();
         const { attributes } = json.data[0];
@@ -30,7 +36,7 @@ export const Home = () => {
     };
 
     load();
-  }, []);
+  }, [location]);
 
   if (data === undefined) {
     return <PageNotFound />;

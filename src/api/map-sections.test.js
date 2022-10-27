@@ -181,7 +181,5 @@ describe('map-sections', () => {
     expect(data.sectionId).toBe('gallery');
     expect(data.title).toBe('Gallery');
     expect(data.description).toBe('abc');
-    expect(data.grid[0].srcImg).toBe('a.svg');
-    expect(data.grid[0].altText).toBe('abc');
   });
 });

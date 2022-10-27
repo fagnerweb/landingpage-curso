@@ -36,7 +36,6 @@ describe('map-menu', () => {
     });
     expect(menu.newTab).toBe(false);
     expect(menu.text).toBe('Landing Page');
-    expect(menu.srcImg).toBe('a.svg');
     expect(menu.link).toBe('#home');
     expect(menu.links[0].newTab).toBe(false);
     expect(menu.links[0].children).toBe('pricing');
